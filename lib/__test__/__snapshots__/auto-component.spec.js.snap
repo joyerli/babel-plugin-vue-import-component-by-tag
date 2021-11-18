@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`排查指定文件不自动导入 1`] = `
+"import { Button } from 'element-ui';
+export default {
+  name: 'About',
+
+  /* name: joyer */
+  components: {
+    [Button.name]: Button
+  }
+};"
+`;
+
+exports[`自动导入 1`] = `
+"import _default10 from \\"babel-plugin-vue-import-component-by-tag/lib/runtime/register.js\\";
+import _default9 from \\"@candy/ui/lib/component/cd-button\\";
+import _default8 from \\"@candy/ui/lib/component/cd-input-money\\";
+import \\"element-ui/lib/theme-chalk/form-item.css\\";
+import _default7 from \\"element-ui/lib/form-item\\";
+import \\"element-ui/lib/theme-chalk/form.css\\";
+import _default6 from \\"element-ui/lib/form\\";
+import _default5 from \\"@candy/ui/lib/component/cd-text-action\\";
+import _default4 from \\"comp@/mkt-icon\\";
+import \\"element-ui/lib/theme-chalk/col.css\\";
+import _default3 from \\"element-ui/lib/col\\";
+import \\"element-ui/lib/theme-chalk/row.css\\";
+import _default2 from \\"element-ui/lib/row\\";
+import _default from \\"@candy/ui/lib/component/cd-panel\\";
+import { Button } from 'element-ui';
+const _component = {
+  name: 'About',
+
+  /* name: joyer */
+  components: {
+    [Button.name]: Button
+  }
+};
+const components = _component.components || {};
+
+_default10([{
+  tag: 'cd-panel',
+  component: _default
+}, {
+  tag: 'el-row',
+  component: _default2
+}, {
+  tag: 'el-col',
+  component: _default3
+}, {
+  tag: 'mkt-icon',
+  component: _default4
+}, {
+  tag: 'cd-text-action',
+  component: _default5
+}, {
+  tag: 'el-form',
+  component: _default6
+}, {
+  tag: 'el-form-item',
+  component: _default7
+}, {
+  tag: 'cd-input-money',
+  component: _default8
+}, {
+  tag: 'cd-button',
+  component: _default9
+}], components);
+
+_component.components = components;
+export default _component;"
+`;

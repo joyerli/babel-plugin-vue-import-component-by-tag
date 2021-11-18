@@ -1,0 +1,50 @@
+{
+  "name": "babel-plugin-vue-import-component-by-tag",
+  "version": "1.0.0",
+  "description": "自动导入vue组件",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint lib/",
+    "test": "jest"
+  },
+  "files": [
+    "src/",
+    "lib/",
+    "!/**/__test__/",
+    "README.md",
+    "index.js",
+    "package.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joyerli/babel-plugin-vue-import-component-by-tag.git"
+  },
+  "keywords": [
+    "webpack-loader",
+    "loader",
+    "upman"
+  ],
+  "author": "joyer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joyerli/babel-plugin-vue-import-component-by-tag/issues"
+  },
+  "homepage": "https://github.com/joyerli/babel-plugin-vue-import-component-by-tag",
+  "dependencies": {
+    "@babel/helper-module-imports": "^7.0.0",
+    "anymatch": "^3.1.1",
+    "json-templater": "^1.2.0",
+    "lodash": "^4.17.15",
+    "vue-record-tags-loader": "^1.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "jest": "^24.9.0"
+  }
+}
